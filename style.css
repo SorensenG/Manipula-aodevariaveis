@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+
+
+}
+
+:root {
+    --color: #6f00ff;
+    --spacing: 100px;
+    --blur: 0px;
+    --size: 100px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+p {
+    color: var(--color)
+}
+
+input {
+    width: 300px;
+}
+
+.controls {
+    color: var(--color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100vw;
+    margin-bottom: 100px;
+
+}
+
+input {
+    width: 200px;
+    margin: 0 10px 0 10px;
+}
+
+.cor {
+    height: 40px;
+    width: 150px;
+}
+
+body {
+    text-align: center;
+    background: #313131;
+    color: white;
+    font-family: 'helvetica neue', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 200px;
+    height: 6px;
+    background: var(--color);
+    border-radius: 5px;
+    outline: none;
+    transition: background 0.3s;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: var(--color);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+input[type="range"]:hover::-webkit-slider-thumb {
+    background: #ff0000;
+}
+
+img {
+    height: var(--size);
+    width: var(--size);
+    filter: blur(var(--blur));
+    padding: var(--spacing);
+    background-color: var(--color);
+    border-radius: 20%;
+}
